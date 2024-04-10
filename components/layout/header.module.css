@@ -1,17 +1,18 @@
 .header {
   width: 100vw;
-  height: 80vh;
+  height: 90vh;
   background-image: linear-gradient(
       to right,
       rgba(37, 150, 190, 0.3),
       rgba(37, 150, 190, 0.4)
     ),
     url("/tour/england.jpg");
-  background-position: 100%;
+  background-position: 80%;
   text-align: center;
   position: relative;
   color: white;
   z-index: 10;
+  background-attachment: fixed;
 }
 
 .header > * {

@@ -6,7 +6,7 @@
   height: 80vh;
   background-color: white;
   transition: all 0.8s;
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 .slider_container h2 {
