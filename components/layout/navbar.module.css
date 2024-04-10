@@ -9,6 +9,8 @@
   height: 6rem;
   z-index: 100;
   margin-bottom: -6rem;
+  position: relative;
+  font-family: sans-serif;
 }
 
 .navigation ul {

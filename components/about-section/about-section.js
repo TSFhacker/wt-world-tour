@@ -4,6 +4,7 @@ import Image from "next/image";
 import img1 from "@/public/tour/bridge.jpg";
 import img2 from "@/public/tour/beach.jpg";
 import img3 from "@/public/tour/beach2.jpg";
+import Composition from "../utilities/composition";
 
 export default function AboutSection({ innerRef, hidden }) {
   return (
@@ -41,35 +42,7 @@ export default function AboutSection({ innerRef, hidden }) {
             Learn more
           </Link>
         </div>
-        <div className={classes.about_pictures}>
-          <Image
-            className={`${classes.about_picture} ${classes.about_picture_1}`}
-            src={img1}
-            width={300}
-            height={250}
-            alt="A picture of England"
-            quality={100}
-            unoptimized
-          />
-          <Image
-            className={`${classes.about_picture} ${classes.about_picture_2}`}
-            src={img2}
-            width={300}
-            height={250}
-            alt="A picture of England"
-            quality={100}
-            unoptimized
-          />
-          <Image
-            className={`${classes.about_picture} ${classes.about_picture_3}`}
-            src={img3}
-            width={300}
-            height={250}
-            alt="A picture of England"
-            quality={100}
-            unoptimized
-          />
-        </div>
+        <Composition />
       </div>
     </section>
   );
