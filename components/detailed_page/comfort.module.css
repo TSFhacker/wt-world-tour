@@ -1,0 +1,61 @@
+.comfort_container {
+  width: 70%;
+  background-color: white;
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+
+.comfort_container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1d65a7;
+  padding: 1.5rem;
+}
+
+.comfort_container h3 {
+  font-size: 2rem;
+  color: #1d65a7;
+  padding: 2rem;
+}
+
+.check_icon {
+  display: inline-block;
+  margin-right: 0.5rem;
+  color: green;
+}
+
+.summary_section {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+
+.summary_section figcaption,
+.included_section ul {
+  padding-left: 2rem;
+}
+
+.summary_section img {
+  border-radius: 1rem;
+  z-index: 10;
+}
+
+.included_section {
+  width: 100%;
+}
+
+.included_section ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+}
+
+.included_section ul > * {
+  flex: 50%;
+  height: 3rem;
+}
+
+.included_section li {
+  display: flex;
+}

@@ -1,0 +1,78 @@
+.header_container {
+  background-color: white;
+  padding-bottom: 2rem;
+  padding-top: 6rem;
+}
+
+.bg_image {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.tour_intro {
+  margin-left: 15rem;
+  margin-right: 15rem;
+  margin-top: 4rem;
+  position: relative;
+}
+
+.tour_intro_name {
+  display: flex;
+}
+
+.tour_intro_name div {
+  flex: 60%;
+}
+
+.tour_intro h1 {
+  font-size: 2.5rem;
+  color: #1d65a7;
+  margin: 1.5rem;
+}
+
+.tour_intro ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0.5rem 1.5rem;
+  background-color: #f2f7fd;
+  gap: 1rem;
+  width: 90%;
+}
+
+.tour_info {
+  width: 50%;
+}
+
+.tour_info > * {
+  flex: 30%;
+  padding: 1rem;
+}
+
+.tour_info span {
+  font-weight: 700;
+}
+
+.tour_image {
+  width: 31.25rem;
+  height: 20rem;
+  transform: translateY(-50%);
+}
+
+.tour_reasons {
+  width: 90%;
+}
+
+.tour_reasons > * {
+  flex: 30%;
+  height: 3rem;
+}
+
+.check_icon {
+  display: inline-block;
+  margin-right: 0.5rem;
+  color: green;
+}

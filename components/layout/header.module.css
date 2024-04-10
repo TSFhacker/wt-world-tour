@@ -1,0 +1,36 @@
+.header {
+  width: 100vw;
+  height: 80vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(37, 150, 190, 0.3),
+      rgba(37, 150, 190, 0.4)
+    ),
+    url("/tour/england.jpg");
+  background-position: 100%;
+  text-align: center;
+  position: relative;
+  color: white;
+  z-index: 10;
+}
+
+.header > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.header h2 {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 500;
+}

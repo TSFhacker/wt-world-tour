@@ -1,0 +1,28 @@
+.card {
+  display: flex;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  width: 50rem;
+  height: 15rem;
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.description {
+  padding: 1.5rem 2rem;
+}
+
+.name {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #1d65a7;
+}
+
+.intro {
+  font-size: 1rem;
+}
+
+.detail_button {
+  text-align: right;
+  margin-right: 3rem;
+}

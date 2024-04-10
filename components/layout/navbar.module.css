@@ -1,0 +1,61 @@
+.navigation {
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  z-index: 100;
+  margin-bottom: -6rem;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  margin: 0 2rem;
+}
+
+.link {
+  font-size: 1.3rem;
+  font-weight: 300;
+  transition: 0.2s;
+}
+
+.link:hover,
+.link.active {
+  color: rgb(37, 150, 190);
+}
+
+@media (min-width: 768px) {
+  .nav ul {
+    gap: 0.5rem;
+  }
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+}
+
+.logo h1 {
+  color: rgba(7, 182, 237, 255);
+}
+
+.logo h3 {
+  font-style: italic;
+}
+
+.fixed {
+  background-color: white;
+  color: grey;
+  position: fixed;
+  border-bottom: 4px solid #1d65a7;
+}
