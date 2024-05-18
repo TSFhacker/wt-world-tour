@@ -2,6 +2,7 @@
 import Image from "next/image";
 import classes from "./itinerary.module.css";
 import { MdExpandMore } from "react-icons/md";
+import dummyImg from "@/public/tour/tour2.jpg";
 
 export default function ItineraryItem(params) {
   const { info, i } = params;

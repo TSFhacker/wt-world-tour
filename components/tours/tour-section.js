@@ -23,9 +23,13 @@ export default function TourSection() {
     );
 
     const result = await tours.json();
-    setTours(result);
-    setFilteredTours(Object.values(result));
-    setSearchTours(Object.values(result));
+    const tourList = Object.values(result).map((tour, i) =>
+      tour.slug ? tour : { ...tour, slug: Object.keys(result)[i] }
+    );
+    setTours(tourList);
+    setFilteredTours(tourList);
+    setSearchTours(tourList);
+    console.log(tourList);
     let tempList = [];
     Object.values(result).forEach((tour) =>
       tour.countries.forEach((country) => {
@@ -55,6 +59,7 @@ export default function TourSection() {
   };
 
   const handleFind = function (e) {
+    handlePageClick({ selected: 0 });
     setSearchTours(
       filteredTours
         .map((tour, i) =>
@@ -67,6 +72,7 @@ export default function TourSection() {
   };
 
   const handleFilter = function (e) {
+    handlePageClick({ selected: 0 });
     const markedCheckbox = new Array(
       ...document.querySelectorAll('input[type="checkbox"]:checked')
     ).map((checkbox) => checkbox.closest("label").textContent.slice(0, -4));
@@ -94,9 +100,6 @@ export default function TourSection() {
             tour.tour_name.includes(searchInputRef.current.value)
         )
       );
-
-    console.log(filtered2);
-
     setFilteredTours(filtered2);
     setSearchTours(filtered2);
   };
