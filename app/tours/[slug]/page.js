@@ -4,6 +4,18 @@ import DetailedHeader from "@/components/detailed_page/detailed-header";
 import Itinerary from "@/components/detailed_page/itinerary";
 import { Suspense } from "react";
 
+export async function generateMetadata({ params }) {
+  const tourInfo = await fetch(
+    `https://wt-world-tour-default-rtdb.asia-southeast1.firebasedatabase.app/tours/${params.slug}.json`
+  );
+  const result = await tourInfo.json();
+
+  return {
+    title: result.tour_name,
+    description: result.summary,
+  };
+}
+
 export default function DetailedTour({ params }) {
   const TourInfo = async function () {
     const tourInfo = await fetch(
