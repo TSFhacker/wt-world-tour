@@ -31,6 +31,8 @@ export default function Home() {
       else setFixed(false);
     };
 
+    //redeploy 18-5-2024
+
     const headerObserver = new IntersectionObserver(stickyNav, {
       root: null,
       threshold: 0,
