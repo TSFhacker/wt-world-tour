@@ -67,3 +67,9 @@
   opacity: 0;
   transform: translateY(8rem);
 }
+
+@media screen and (max-width: 900px) {
+  .form {
+    width: 90%;
+  }
+}

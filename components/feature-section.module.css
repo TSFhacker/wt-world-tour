@@ -37,3 +37,19 @@
   opacity: 0;
   transform: translateY(8rem);
 }
+
+@media screen and (max-width: 900px) {
+  .feature_cards {
+    flex-direction: column;
+  }
+
+  .feature_cards > * {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section {
+    padding: 7rem 3rem;
+  }
+}

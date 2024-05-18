@@ -127,3 +127,16 @@
   transform: scale(0.95);
   color: white;
 }
+
+@media screen and (max-width: 900px) {
+  .booking {
+    width: 95%;
+  }
+  .booking_container {
+    flex-direction: column;
+  }
+
+  .booking_container > * {
+    width: 90%;
+  }
+}

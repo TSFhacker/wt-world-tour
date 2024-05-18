@@ -19,6 +19,7 @@
 
 .tour_intro_name {
   display: flex;
+  width: 100%;
 }
 
 .tour_intro_name div {
@@ -68,11 +69,23 @@
 
 .tour_reasons > * {
   flex: 30%;
-  height: 3rem;
+  height: fit-content;
 }
 
 .check_icon {
   display: inline-block;
   margin-right: 0.5rem;
   color: green;
+}
+
+@media screen and (max-width: 900px) {
+  .tour_intro_name {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .tour_intro {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }

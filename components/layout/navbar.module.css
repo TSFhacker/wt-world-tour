@@ -36,6 +36,10 @@
   color: rgb(37, 150, 190);
 }
 
+.logo {
+  margin: auto 0;
+}
+
 @media (min-width: 768px) {
   .nav ul {
     gap: 0.5rem;
@@ -60,4 +64,24 @@
   color: grey;
   position: fixed;
   border-bottom: 4px solid #1d65a7;
+}
+
+@media screen and (max-width: 900px) {
+  .logo h3 {
+    display: none;
+  }
+
+  .logo h1 {
+    padding-top: 1.2rem;
+  }
+
+  .navigation li {
+    margin: 0 0.75rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo h1 {
+    padding-top: 0;
+  }
 }

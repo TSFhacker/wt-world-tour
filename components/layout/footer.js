@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "@/public/logo.png";
+import logo from "@/public/logo2.png";
 import classes from "./footer.module.css";
 
 export default function Footer() {
@@ -16,7 +16,7 @@ export default function Footer() {
         <div>
           <h1>World Tour</h1>
           <h3>The world is</h3>
-          <h3>yours to explore</h3>
+          <h3> yours to explore</h3>
         </div>
       </div>
       <div className={classes.contact}>

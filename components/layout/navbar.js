@@ -1,6 +1,6 @@
 import Link from "next/link";
 import classes from "./navbar.module.css";
-import logo from "@/public/logo.png";
+import logo from "@/public/logo2.png";
 import Image from "next/image";
 
 export default function Navbar({ fixed }) {
@@ -19,7 +19,7 @@ export default function Navbar({ fixed }) {
         <div>
           <h1>World Tour</h1>
           <h3>The world is</h3>
-          <h3>yours to explore</h3>
+          <h3> yours to explore</h3>
         </div>
       </div>
 

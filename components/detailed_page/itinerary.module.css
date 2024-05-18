@@ -41,6 +41,23 @@
   padding: 0 2rem;
 }
 
+.itinerary_content img {
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
 .itinerary_item_expand {
   height: 30rem;
+}
+
+@media screen and (max-width: 900px) {
+  .itinerary_container {
+    width: 90%;
+  }
+  .itinerary_content {
+    flex-direction: column;
+  }
+  .itinerary_item_expand {
+    height: 40rem;
+  }
 }

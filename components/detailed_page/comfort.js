@@ -16,6 +16,7 @@ export default function Comfort(tourInfo) {
           width={500}
           height={300}
           alt="a picture"
+          className={classes.comfort_image}
         />
       </figure>
       <div className={classes.included_section}>

@@ -13,6 +13,7 @@ export default function TourCard({ tour, slug }) {
           width={350}
           height={350}
           alt={`Image of ${tour.tour_name}`}
+          className={classes.tour_image}
         />
       </div>
       <div className={classes.description}>

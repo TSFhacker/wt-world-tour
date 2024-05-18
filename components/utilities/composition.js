@@ -1,4 +1,4 @@
-import classes from "../about-section/about-section.module.css";
+import classes from "./composition.module.css";
 import Image from "next/image";
 import img1 from "@/public/tour/bridge.jpg";
 import img2 from "@/public/tour/beach.jpg";

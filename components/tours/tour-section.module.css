@@ -23,7 +23,6 @@
 
 .contact {
   border-radius: 2rem;
-  width: 30%;
   height: fit-content;
 }
 .contact h3 {
@@ -142,4 +141,27 @@
 
 .loader {
   margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+  .all_tours {
+    padding: 10rem 2rem;
+  }
+
+  .tour_section {
+    flex-direction: column;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reasons {
+    width: 100%;
+  }
+
+  .pagination_bar {
+    width: 100%;
+  }
 }
