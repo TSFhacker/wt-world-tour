@@ -84,4 +84,16 @@
   .logo h1 {
     padding-top: 0;
   }
+
+  .navigation {
+    padding: 0;
+  }
+
+  .navigation li {
+    margin: 0 0.7rem;
+  }
+
+  .link {
+    font-size: 1rem;
+  }
 }

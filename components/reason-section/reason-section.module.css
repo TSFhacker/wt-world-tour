@@ -98,3 +98,17 @@
     width: 80%;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .reason_section_content_icon {
+    font-size: 2rem;
+  }
+
+  .reason_section_icons {
+    gap: 1rem;
+  }
+
+  .reason_section_icons > * {
+    font-size: 1.5rem;
+  }
+}

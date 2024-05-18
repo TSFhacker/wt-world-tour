@@ -63,7 +63,11 @@
 
 @media screen and (max-width: 600px) {
   .about_section_content {
-    flex-direction: column-reverse;
-    height: 85%;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .about_section {
+    height: 145vh;
   }
 }
