@@ -83,19 +83,19 @@
 @media screen and (max-width: 600px) {
   .logo h1 {
     padding-top: 0.9rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding-left: 0;
   }
 
   .logo img {
-    height: 3rem;
+    height: 4rem;
     width: auto;
   }
 
   .navigation {
     padding: 0;
-    height: 3rem;
-    margin-bottom: -3rem;
+    height: 5rem;
+    margin-bottom: -5rem;
   }
 
   .navigation li {
@@ -103,6 +103,6 @@
   }
 
   .link {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
