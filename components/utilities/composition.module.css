@@ -46,21 +46,21 @@
   }
 
   .about_picture {
-    width: 50%;
+    width: 70%;
   }
 
   .about_picture_1 {
-    left: 5%;
+    left: 0;
     top: -5%;
   }
 
   .about_picture_2 {
-    right: 0;
-    top: 5%;
+    right: -5%;
+    top: 0;
   }
 
   .about_picture_3 {
-    left: 25%;
-    top: 20%;
+    left: 20%;
+    top: 10%;
   }
 }

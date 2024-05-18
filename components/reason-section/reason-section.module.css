@@ -111,4 +111,7 @@
   .reason_section_icons > * {
     font-size: 1.5rem;
   }
+  .reason_section_content > * {
+    padding: 1rem;
+  }
 }
