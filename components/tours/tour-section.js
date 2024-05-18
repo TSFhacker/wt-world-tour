@@ -29,7 +29,6 @@ export default function TourSection() {
     setTours(tourList);
     setFilteredTours(tourList);
     setSearchTours(tourList);
-    console.log(tourList);
     let tempList = [];
     Object.values(result).forEach((tour) =>
       tour.countries.forEach((country) => {
@@ -77,29 +76,21 @@ export default function TourSection() {
       ...document.querySelectorAll('input[type="checkbox"]:checked')
     ).map((checkbox) => checkbox.closest("label").textContent.slice(0, -4));
     if (markedCheckbox.length === 0) {
-      const filtered = Object.values(tours)
-        .map((tour, i) => {
-          return { ...tour, slug: Object.keys(tours)[i] };
-        })
-        .filter((tour) =>
-          tour.tour_name.includes(searchInputRef.current.value)
-        );
+      const filtered = tours.filter((tour) =>
+        tour.tour_name.includes(searchInputRef.current.value)
+      );
       setFilteredTours(Object.values(tours));
       setSearchTours(filtered);
       return;
     }
 
-    const filtered2 = Object.values(tours)
-      .map((tour, i) => {
-        return { ...tour, slug: Object.keys(tours)[i] };
-      })
-      .filter((tour) =>
-        tour.countries.some(
-          (country) =>
-            markedCheckbox.includes(country) &&
-            tour.tour_name.includes(searchInputRef.current.value)
-        )
-      );
+    const filtered2 = tours.filter((tour) =>
+      tour.countries.some(
+        (country) =>
+          markedCheckbox.includes(country) &&
+          tour.tour_name.includes(searchInputRef.current.value)
+      )
+    );
     setFilteredTours(filtered2);
     setSearchTours(filtered2);
   };
