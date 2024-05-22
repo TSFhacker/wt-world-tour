@@ -3,7 +3,9 @@ import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 
 export const metadata = {
-  title: "WT World Tour",
+  title: {
+    default: "WT World Tour"
+  },
   description: "The world is yours to explore",
 };
 
