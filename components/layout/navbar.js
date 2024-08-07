@@ -40,6 +40,11 @@ export default function Navbar({ fixed }) {
               Contact
             </Link>
           </li>
+          <li>
+            <Link className={classes.link} href="/summer-school">
+              Summer school
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

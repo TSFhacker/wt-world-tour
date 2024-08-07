@@ -21,7 +21,7 @@
   text-transform: uppercase;
   font-weight: 300;
   display: inline-block;
-  color: black;
+  color: rgba(37, 150, 190);
   -webkit-background-clip: text;
   letter-spacing: 2px;
   transition: all 0.2s;

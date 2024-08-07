@@ -7,10 +7,43 @@
   background-color: white;
   transition: all 0.8s;
   position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.slider_container div:first-child {
+  width: 60rem;
+}
+
+.slider_container div:last-child {
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.pitch {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.pitch span {
+  font-size: 2rem;
+  font-weight: 700;
+  display: block;
+  color: rgba(37, 150, 190);
 }
 
 .slider_container h2 {
-  color: rgb(18, 44, 54);
+  width: 100%;
+  text-align: center;
+}
+
+.slider_container h2 {
+  color: rgba(37, 150, 190);
   text-align: center;
   font-size: 2rem;
   font-weight: 500;

@@ -1,0 +1,62 @@
+.experience_container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  padding: 3rem 3rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.experience_container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.experience_container ul {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: none;
+  gap: 2rem;
+  list-style: none;
+}
+
+.experience_container li {
+  width: 40rem;
+}
+
+.experience_container li:first-child {
+  font-size: 1.5rem;
+  width: 30rem;
+  font-family: Helvetica;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience_container li:first-child span {
+  font-weight: 700;
+  font-size: 2rem;
+  color: rgba(37, 150, 190);
+}
+
+.experience_container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.experience_container h3 {
+  font-size: 1.3rem;
+}
+
+.experience_container p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.experience_intro {
+  padding: 1rem;
+}

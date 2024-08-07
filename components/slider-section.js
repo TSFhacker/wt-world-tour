@@ -1,73 +1,72 @@
-"use client";
-import Image from "next/image";
+import classes from "./slider-section.module.css";
+import ImageSlideshow from "./utilities/image-slideshow";
 import img1 from "@/public/tour/tour3.jpg";
 import img2 from "@/public/tour/beach2.jpg";
 import img3 from "@/public/tour/tour1.jpg";
 import img4 from "@/public/tour/tour2.jpg";
 import img5 from "@/public/tour/beach.jpg";
-import { PiArrowLeftThin, PiArrowRightThin } from "react-icons/pi";
-import classes from "./slider-section.module.css";
-import { useEffect, useState } from "react";
+
+const images = [
+  {
+    image: img1,
+    alt: "A picture of the scenery that WT World Tour can show you",
+  },
+  {
+    image: img2,
+    alt: "A picture of the scenery that WT World Tour can show you",
+  },
+  {
+    image: img3,
+    alt: "A picture of the scenery that WT World Tour can show you",
+  },
+  {
+    image: img4,
+    alt: "A picture of the scenery that WT World Tour can show you",
+  },
+  {
+    image: img5,
+    alt: "A picture of the scenery that WT World Tour can show you",
+  },
+];
 
 export default function SliderSection({ innerRef, hidden }) {
-  const [currentImg, setCurrentImg] = useState(1);
-  const slideImgs = [img1, img2, img3, img4, img5];
-
-  let intervalId;
-
-  // const resetSliderInterval = function () {
-  //   clearInterval(intervalId);
-  //   intervalId = setInterval(function () {
-  //     console.log("rouding");
-  //     if (currentImg == 5) setCurrentImg(1);
-  //     else setCurrentImg(currentImg + 1);
-  //   }, 5000);
-  //   console.log(intervalId);
-  // };
-
-  const moveToNextImg = function () {
-    // clearInterval(intervalId);
-    if (currentImg == 5) setCurrentImg(1);
-    else setCurrentImg(currentImg + 1);
-    // resetSliderInterval();
-  };
-
-  const moveToPrevImg = function () {
-    if (currentImg == 1) setCurrentImg(5);
-    else setCurrentImg(currentImg - 1);
-    // resetSliderInterval();
-  };
-
-  // useEffect(resetSliderInterval, []);
-
   return (
     <div
       className={`${classes.slider_container} ${hidden && classes.hidden}`}
       ref={innerRef}
     >
-      <h2>Breathtaking destinations</h2>
-      <div className={classes.slider}>
-        <PiArrowLeftThin
-          className={classes.slider_arrow_left}
-          onClick={moveToPrevImg}
-        />
-        <div className={classes.slider_pictures}>
-          {slideImgs.map((img, i) => (
-            <Image
-              key={`slider_picture_${i}`}
-              className={`${
-                currentImg - 1 == i ? classes.slider_picture_active : ""
-              }`}
-              src={img}
-              alt="A picture of a destination WT can take you"
-            />
-          ))}
+      <div>
+        <ImageSlideshow images={images} />
+      </div>
+      <div>
+        <h2>Breathtaking destinations</h2>
+        <div className={classes.pitch}>
+          <p>
+            Our tours are not just about visiting new places; they are about
+            creating memories that last a lifetime. Picture yourself exploring
+            ancient ruins, savoring exquisite local cuisine, and mingling with
+            indigenous communities.
+          </p>
+          <br />
+          <p>
+            Our expert guides, with their deep local knowledge and passion, will
+            lead you through hidden gems and iconic landmarks, ensuring every
+            moment is rich with discovery and wonder. Join us on a WT World Tour
+            and open the door to a world where every day is a new adventure,
+            every destination a new story, and every experience a step closer to
+            the extraordinary.
+          </p>
+          <br />
+          <p>
+            Don't just travel—immerse yourself in the wonders of the world with
+            WT World Tour. Your unforgettable journey awaits!
+          </p>
+          <br />
+          <span>
+            We guarantee a breathtaking and unique experience unlike anything
+            you have ever seen before
+          </span>
         </div>
-
-        <PiArrowRightThin
-          className={classes.slider_arrow_right}
-          onClick={moveToNextImg}
-        />
       </div>
     </div>
   );

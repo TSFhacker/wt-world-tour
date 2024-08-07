@@ -1,0 +1,61 @@
+.list_container {
+  height: fit-content;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 6rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: white;
+}
+
+.list_container > div {
+  width: 40%;
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.list_container span {
+  color: rgba(37, 150, 190);
+}
+
+.list_container ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.list_container li {
+  width: 30%;
+  width: 28rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: white;
+}
+
+.program_intro {
+  padding: 1rem;
+}
+
+.program_intro h3 {
+  font-size: 1.5rem;
+  color: rgba(37, 150, 190);
+}
+
+.list_container img {
+  height: 20rem;
+  width: 28rem;
+}
+
+.list_intro {
+  padding: 2rem;
+  font-size: 1rem;
+}
+
+.list_intro span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}

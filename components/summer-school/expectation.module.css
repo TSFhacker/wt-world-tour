@@ -1,0 +1,45 @@
+.expectation_container {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  height: 60vh;
+}
+
+.expectation_intro {
+  width: 40%;
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expectation_intro h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: rgba(37, 150, 190);
+}
+
+.expectation_intro p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.expectation_images {
+  display: flex;
+}
+
+.expectation_images img {
+  object-fit: cover;
+}
+
+.expectation_image_1 {
+  height: 100%;
+}
+
+.expectation_image_2 {
+  height: 45%;
+}
+
+.expectation_image_3 {
+  height: 55%;
+}

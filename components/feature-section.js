@@ -17,7 +17,7 @@ export default function FeatureSection({ innerRef, hidden }) {
         {Object.values(result)
           .slice(0, 3)
           .map((tour, i) => (
-            <FeatureCard tour={tour} slug={Object.keys(result)[i]} />
+            <FeatureCard tour={tour} key={Object.keys(result)[i]} slug={Object.keys(result)[i]} />
           ))}
       </div>
     );

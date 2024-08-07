@@ -1,0 +1,29 @@
+.reasons_container {
+  width: 100%;
+  background-color: rgba(37, 150, 190);
+  color: white;
+  padding: 2rem 4rem;
+}
+
+.reasons_container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.reasons_container ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 40vh;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.reasons_container li {
+  width: 33%;
+}
+
+.check_icon {
+  margin-right: 1rem;
+}
