@@ -32,18 +32,18 @@ export default function Expectation() {
             alt="expectation"
           />
         </div>
-        <div className={classes.expectation_intro}>
-          <div>
-            <h2>What to expect</h2>
-            <p>
-              Our programme ensures students are involved in academic classes as
-              well as structured and supervised activities each day. Every young
-              person who enrolls with us gains invaluable life skills, forges
-              long-lasting friendships, and becomes part of our diverse global
-              family.
-            </p>
-            <UtilButton children="Contact us" color="blue" link="/contact" />
-          </div>
+      </div>
+      <div className={classes.expectation_intro}>
+        <div>
+          <h2>What to expect</h2>
+          <p>
+            Our programme ensures students are involved in academic classes as
+            well as structured and supervised activities each day. Every young
+            person who enrolls with us gains invaluable life skills, forges
+            long-lasting friendships, and becomes part of our diverse global
+            family.
+          </p>
+          <UtilButton children="Contact us" color="blue" link="/contact" />
         </div>
       </div>
     </div>

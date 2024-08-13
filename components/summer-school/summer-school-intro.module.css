@@ -36,3 +36,15 @@
 .intro_detail h2 {
   font-size: 2rem;
 }
+
+@media screen and (max-width: 900px) {
+  .intro_container {
+    flex-direction: column;
+    height: fit-content;
+    background-position: 50%;
+  }
+
+  .intro_container img {
+    object-position: 40% 20%;
+  }
+}

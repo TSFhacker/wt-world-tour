@@ -43,3 +43,32 @@
 .expectation_image_3 {
   height: 55%;
 }
+
+@media screen and (max-width: 900px) {
+  .expectation_image_1 {
+    width: 70%;
+  }
+
+  .expectation_image_2 {
+    width: 100%;
+  }
+
+  .expectation_image_3 {
+    width: 100%;
+  }
+
+  .expectation_images > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .expectation_container {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .expectation_intro {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -37,3 +37,14 @@
 .theme_container span:first-child {
   font-size: 3rem;
 }
+
+@media screen and (max-width: 600px) {
+  .theme_container p {
+    width: 15rem;
+    font-size: 1.5rem;
+  }
+
+  .theme_container span {
+    font-size: 2.5rem;
+  }
+}

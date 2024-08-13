@@ -27,3 +27,19 @@
 .check_icon {
   margin-right: 1rem;
 }
+
+@media screen and (max-width: 600px) {
+  .reasons_container {
+    height: fit-content;
+  }
+  .reasons_container li {
+    width: 45%;
+    height: fit-content;
+  }
+
+  .reasons_container ul {
+    font-size: 1rem;
+    gap: 1rem;
+    height: fit-content;
+  }
+}

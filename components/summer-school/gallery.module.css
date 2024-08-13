@@ -32,3 +32,14 @@
   font-size: 2rem;
   font-weight: 700;
 }
+
+@media screen and (max-width: 900px) {
+  .gallery_container p {
+    font-size: 1rem;
+    width: 80%;
+  }
+
+  .gallery_container span {
+    font-size: 2rem;
+  }
+}

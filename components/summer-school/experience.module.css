@@ -60,3 +60,26 @@
 .experience_intro {
   padding: 1rem;
 }
+
+@media screen and (max-width: 900px) {
+  .experience_container {
+    padding: 1rem 1rem;
+  }
+
+  .experience_container li:first-child {
+    font-size: 1rem;
+  }
+
+  .experience_container li:first-child span {
+    font-size: 1.5rem;
+  }
+
+  .experience_container li {
+    width: 20rem;
+    height: fit-content;
+  }
+
+  .experience_container img {
+    height: 15rem;
+  }
+}
