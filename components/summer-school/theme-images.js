@@ -24,7 +24,7 @@ export default function ThemeImages() {
       <h1>Summer school</h1>
       <ImageSlideshow images={images} />
       <p>
-        THE INTERNATIONAL <span>SUMMER SCHOOL</span> FOR{" "}
+        THE INTERNATIONAL <span>SUMMER SCHOOL</span> FOR
         <span>LIFETIME MEMORIES</span>
       </p>
     </div>
